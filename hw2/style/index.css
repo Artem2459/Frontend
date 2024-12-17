@@ -1,0 +1,125 @@
+body {
+    background-color: #1c1c1c; 
+    color: #e6e6e6; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #000000, #3a005e); 
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #e639f0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 4px 8px rgba(255, 0, 255, 0.3);
+    position: relative;
+}
+
+h1.title, h2.title {
+    color: #e639f0; 
+    text-shadow: 0 0 5px #e639f0, 0 0 10px #3a005e;
+    position: relative;
+}
+
+.text1, .text3, .text5 {
+    color: #e639f0;
+    font-size: larger;
+    position: relative;
+}
+
+.text2, .text4, .text6 {
+    color: #e6e6e6;
+    position: relative;
+}
+
+.link {
+    color: #e639f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ff66ff;
+    text-decoration: underline;
+}
+
+.link:active {
+    color: #d926d9;
+}
+
+.image1 {
+    height: 150px;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: logoGlow 2s infinite alternate; 
+}
+
+@keyframes logoGlow {
+    0% {
+        text-shadow: 0 0 10px #e639f0, 0 0 20px #3a005e;
+    }
+    50% {
+        text-shadow: 0 0 20px #e639f0, 0 0 30px #3a005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #e639f0, 0 0 20px #3a005e;
+    }
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6 {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #e639f0, 0 0 20px #3a005e;
+    }
+    50% {
+        text-shadow: 0 0 20px #e639f0, 0 0 30px #3a005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #e639f0, 0 0 20px #3a005e;
+    }
+}
+
+.image {
+    max-width: 60%; 
+    height: auto;
+    display: block;
+    margin: 30px auto; 
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 0, 255, 0.6); 
+    border: 2px solid #e639f0; 
+    position: relative;
+    animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 15px #e639f0, 0 0 30px #e639f0, 0 0 60px #e639f0;
+    }
+    50% {
+        box-shadow: 0 0 30px #ff00ff, 0 0 60px #ff00ff, 0 0 100px #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 15px #e639f0, 0 0 30px #e639f0, 0 0 60px #e639f0;
+    }
+}
+
+
